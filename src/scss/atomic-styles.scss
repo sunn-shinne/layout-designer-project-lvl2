@@ -1,0 +1,19 @@
+.d-grid {
+  display: grid;
+
+  @for $i from 1 through 12 {
+    .span-#{i} {
+      grid-template-columns: span i;
+    }
+  }
+}
+
+.mx-25 {
+  margin-right: 25px;
+  margin-left: 25px;
+}
+
+.mx-50 {
+  margin-right: 50px;
+  margin-left: 50px;
+}
