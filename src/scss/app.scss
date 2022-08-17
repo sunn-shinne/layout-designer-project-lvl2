@@ -1,48 +1,5 @@
-@font-face {
-  font-family: Roboto;
-  font-weight: normal;
-  src: url("../fonts/Roboto-Regular.ttf");
-}
+@import "variables.scss";
+@import "general.scss";
+@import "header.scss";
 
-@font-face {
-  font-family: Roboto;
-  font-weight: bold;
-  src: url("../fonts/Roboto-Bold.ttf");
-}
 
-$mobile: false;
-
-* {
-  margin: 0;
-}
-
-body {
-  box-sizing: border-box;
-  min-height: 100%;
-  overflow-x: hidden;
-
-  color: #cacaca;
-  font: normal 18px/1.5 Roboto, sans-serif;  
-
-  background-color: #08020d;
-
-  h1 {
-    font: bold 60px/90px Roboto, sans-serif; 
-    text-transform: uppercase;
-
-    @if $mobile {
-      font-size: 30px;
-      line-height: 45px;
-    }
-  }
-
-  h2 {
-    font: bold 38px/57px Roboto, sans-serif; 
-    text-transform: uppercase;
-
-    @if $mobile {
-      font-size: 18px;
-      line-height: 27px;
-    }
-  }
-}
