@@ -28,7 +28,7 @@ body {
     font: bold 60px/90px Roboto, sans-serif; 
     text-transform: uppercase;
 
-    @if $mobile {
+    @media (max-width: 811px) {
       font-size: 30px;
       line-height: 45px;
     }
@@ -38,7 +38,7 @@ body {
     font: bold 38px/57px Roboto, sans-serif; 
     text-transform: uppercase;
 
-    @if $mobile {
+    @media (max-width: 811px) {
       font-size: 18px;
       line-height: 27px;
     }
