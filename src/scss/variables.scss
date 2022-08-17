@@ -3,10 +3,12 @@ $mobile: false;
 $black: #08020D;
 $white: #FFFFFF;
 
-$text-light: #E0E0E0;
-$text-grey: #CACACA;
+$light-grey: #E0E0E0;
+$dark-grey: #CACACA;
 
-$success: #34C176;
-$primary: #5328A1;
-$secondery:  #95390C;
-$extra: #F89202;
+$green: #34C176;
+$purple: #5328A1;
+$red:  #95390C;
+$orange: #F89202;
+
+$secondary-colors: (green: $green, purple: $purple, red: $red, orange: $orange);

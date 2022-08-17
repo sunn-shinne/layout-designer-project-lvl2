@@ -8,8 +8,7 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <main>
-    <header class="header">
+  <header class="header">
     <div class="header-row">
       <div class="heading">
         <img class="heading-logo" src="./images/logo.svg" alt="Нота">
@@ -36,7 +35,23 @@
         <input class="search-input" id="search" placeholder="Поиск...">
       </form>
     </div>
-    </header>
+  </header>
+
+  <main>
+    <section class="description" id="page-description">
+      <h1 class="title">Онлайн музыка где угодно</h1>
+      <h2 class="subtitle">Без ограничений</h2>
+      <p class="text">Получите доступ всего за несколько шагов. Заполните форму ниже и откройте мир музыки</p>
+      <form class="form">
+        <label class="sr-only" for="name">Имя</label>
+        <input class="input" id="name" placeholder="Имя">
+
+        <label class="sr-only" for="email">Email</label>
+        <input class="input" id="email" placeholder="Email">
+
+        <button class="btn btn-green" type="submit">Получить доступ</button>
+      </form>
+    </section>
   </main>
   
 </body>

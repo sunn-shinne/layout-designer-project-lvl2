@@ -1,0 +1,46 @@
+.description {
+  padding: 200px 0;
+  
+  color: $white;
+  text-align: center;
+
+  @include image(banner);
+
+  @media (max-width: 1239px) {
+    padding: 250px 25px 200px;
+  }
+
+  .subtitle {
+    margin-bottom: 31px;
+  }
+
+  .text {
+    font-size: 16px;
+    margin-bottom: 17px;
+  }
+
+  .form {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 24px;
+
+    max-width: 570px;
+    margin: 0 auto;
+
+    .input {
+      flex: 1 0 30%;
+      min-width: 270px;
+      min-height: 50px;
+
+      margin-bottom: 1.5rem;
+
+      @media (max-width: 811px) {
+        flex-basis: 100%;
+      }
+    }
+
+    .btn {
+      flex: 1 0 100%;
+    }
+  }
+}
