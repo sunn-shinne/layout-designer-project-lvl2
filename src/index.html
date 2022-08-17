@@ -5,8 +5,39 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Music Box</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <main>
+    <header class="header">
+      <div class="heading">
+        <img class="heading-logo" src="./images/logo.svg" alt="note">
+        <span class="heading-text uppercase">Music box</span>
+      </div>
+
+      <nav class="nav">
+        <ul class="list">
+          <li class="list-item">
+            <a class="nav-link active">Главная</a>
+          </li>
+          <li class="list-item">
+            <a class="nav-link">Каталог</a>
+          </li>
+          <li class="list-item">
+            <a class="nav-link">Исполнители</a>
+          </li>
+          <li class="list-item">
+            <a class="nav-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <form class="search">
+        <label class="sr-only" for="search">Поиск по сайту</label>
+        <input class="search__input" id="search" placeholder="Поиск...">
+      </form>
+    </header>
+  </main>
   
 </body>
 </html>
