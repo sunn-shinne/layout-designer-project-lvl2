@@ -1,14 +1,14 @@
 @use "sass:map";
 
 @font-face {
-  font-family: Roboto;
   font-weight: normal;
+  font-family: Roboto;
   src: url("../fonts/Roboto-Regular.ttf");
 }
 
 @font-face {
-  font-family: Roboto;
   font-weight: bold;
+  font-family: Roboto;
   src: url("../fonts/Roboto-Bold.ttf");
 }
 
@@ -22,12 +22,12 @@ body {
   overflow-x: hidden;
 
   color: #cacaca;
-  font: normal 18px/1.5 Roboto, sans-serif;  
+  font: normal 18px/1.5 Roboto, sans-serif;
 
   background-color: #08020d;
 
   h1 {
-    font: bold 60px/90px Roboto, sans-serif; 
+    font: bold 60px/90px Roboto, sans-serif;
     text-transform: uppercase;
 
     @media (max-width: 811px) {
@@ -37,7 +37,7 @@ body {
   }
 
   h2 {
-    font: bold 38px/57px Roboto, sans-serif; 
+    font: bold 38px/57px Roboto, sans-serif;
     text-transform: uppercase;
 
     @media (max-width: 811px) {
@@ -55,16 +55,18 @@ body {
 
 .btn {
   padding: 20px 30px;
-  
-  font-size: 13px;
+
   color: white;
+
+  font-size: 13px;
   text-transform: uppercase;
-  
-  outline: none;
+
   border: none;
   border-radius: 5px;
+
+  outline: none;
   cursor: pointer;
-  
+
   @each $name, $color in $secondary-colors {
     &.btn-#{$name} {
       background-color: $color;
@@ -72,7 +74,7 @@ body {
   }
 
   &.btn-outlined {
-    background-color: rgba($color: $white, $alpha: 0);
+    background-color: rgba($color: $white, $alpha: 0%);
     border: 1px solid $white;
   }
 
@@ -87,7 +89,7 @@ body {
 
   color: $white;
 
-  background-color: rgba($color: $white, $alpha: 0);
+  background-color: rgba($color: $white, $alpha: 0%);
   border: 2px solid $dark-grey;
   border-radius: 3px;
   outline: none;
@@ -99,15 +101,19 @@ body {
 
 .sr-only {
   position: absolute;
+
   width: 1px;
   height: 1px;
   margin: -1px;
-  border: 0;
   padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
   overflow: hidden;
+
+  white-space: nowrap;
+
+  border: 0;
+
+  clip: rect(0 0 0 0);
+  clip-path: inset(100%);
 }
 
 .t-uppercase {
