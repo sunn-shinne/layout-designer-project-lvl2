@@ -13,11 +13,17 @@
 }
 
 * {
+  box-sizing: border-box;
   margin: 0;
+  padding: 0;
+
+  text-decoration: none;
+
+  list-style: none;
 }
 
 body {
-  box-sizing: border-box;
+  
   min-height: 100%;
   overflow-x: hidden;
 
@@ -51,6 +57,12 @@ body {
   background-image: url("../images/#{$image-name}.png");
   background-position: center;
   background-size: cover;
+}
+
+@mixin media ($breakpoint: small) {
+  @media (max-width: map.get($breakpoints, $breakpoint)) {
+    @content;
+  }
 }
 
 .btn {

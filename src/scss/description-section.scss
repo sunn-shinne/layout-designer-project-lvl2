@@ -6,7 +6,7 @@
 
   @include image(banner);
 
-  @media (max-width: 1239px) {
+  @include media (medium) {
     padding: 250px 25px 200px;
   }
 
@@ -36,7 +36,7 @@
 
       margin-bottom: 1.5rem;
 
-      @media (max-width: 811px) {
+      @include media (small) {
         flex-basis: 100%;
       }
     }
