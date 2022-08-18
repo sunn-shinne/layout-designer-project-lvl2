@@ -5,6 +5,10 @@ lint:
 	npx stylelint ./src/scss/*.scss
 	npx htmlhint ./src/*.html
 
+lint-fix:
+	npx stylelint ./src/scss/*.scss --fix
+	npx htmlhint ./src/*.html --fix
+
 deploy:
 	sass ./src/scss/app.scss ./src/css/style.css
 	npx surge ./src/
