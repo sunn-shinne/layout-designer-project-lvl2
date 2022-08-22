@@ -17,17 +17,16 @@
   margin: 0;
   padding: 0;
 
+  color: #cacaca;
   text-decoration: none;
 
   list-style: none;
 }
 
 body {
-  
   min-height: 100%;
   overflow-x: hidden;
 
-  color: #cacaca;
   font: normal 18px/1.5 Roboto, sans-serif;
 
   background-color: #08020d;
@@ -59,7 +58,7 @@ body {
   background-size: cover;
 }
 
-@mixin media ($breakpoint: small) {
+@mixin media($breakpoint: small) {
   @media (max-width: map.get($breakpoints, $breakpoint)) {
     @content;
   }
