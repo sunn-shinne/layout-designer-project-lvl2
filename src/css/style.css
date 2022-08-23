@@ -65,7 +65,7 @@ body h2 {
 .btn {
   padding: 20px 30px;
   color: white;
-  font-size: 13px;
+  font-size: 12.8px;
   text-transform: uppercase;
   border: none;
   border-radius: 5px;
@@ -451,6 +451,40 @@ body h2 {
 }
 .news .news-item .item-content .content-footer .btn {
   width: max-content;
+}
+
+.app .app-title {
+  text-align: center;
+}
+.app .app-content {
+  display: flex;
+  flex-direction: row;
+  row-gap: 15px;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+@media (max-width: 1239px) {
+  .app .app-content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+.app .app-content p {
+  margin-bottom: 15px;
+}
+.app .app-content .img {
+  display: flex;
+  justify-content: center;
+  flex: 1 1 45%;
+}
+.app .app-content .text {
+  flex: 1 1 55%;
+  margin-top: 15px;
+}
+.app .app-content .text .btn {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 16px 40px;
 }
 
 /*# sourceMappingURL=style.css.map */

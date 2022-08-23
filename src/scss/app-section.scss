@@ -1,0 +1,42 @@
+.app {
+  .app-title {
+    text-align: center;
+  }
+
+  .app-content {
+    display: flex;
+    flex-direction: row;
+    row-gap: 15px;
+    justify-content: space-between;
+
+    margin-bottom: 100px;
+
+    @include media(medium) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    p {
+      margin-bottom: 15px;
+    }
+
+    .img {
+      display: flex;
+      justify-content: center;
+
+      flex: 1 1 45%;
+    }
+
+    .text {
+      flex: 1 1 55%;
+
+      margin-top: 15px;
+
+      .btn {
+        display: inline-block;
+        margin-top: 15px;
+        padding: 16px 40px;
+      }
+    }
+  }
+}
