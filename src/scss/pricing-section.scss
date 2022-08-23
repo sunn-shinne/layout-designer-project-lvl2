@@ -63,4 +63,15 @@
       }
     }
   }
+
+  .pricing-description {
+    margin-top: 40px;
+
+    color: $white;
+    font-size: 16px;
+
+    @include media(small) {
+      margin-top: 20px;
+    }
+  }
 }
