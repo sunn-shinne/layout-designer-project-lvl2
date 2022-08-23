@@ -1,0 +1,73 @@
+.pricing {
+  @include adaptive-container;
+  text-align: center;
+
+  .pricing-title {
+    margin-bottom: 50px;
+
+    color: $white;
+  }
+
+  .pricing-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    justify-content: center;
+
+    @include media(small) {
+      flex-direction: column;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+
+      @include px(1.5rem);
+
+      font-size: 13px;
+
+      border-radius: 1rem;
+
+      @for $num from 1 to 4 {
+        &.card-bg-#{$num} {
+          @include image(subscribe_#{$num});
+        }
+      }
+
+      .card-title {
+        margin: 24px 0 200px;
+
+        color: $white;
+        font-weight: normal;
+        font-size: 24px;
+        text-transform: uppercase;
+      }
+
+      .card-price {
+        margin-bottom: 40px;
+
+        color: $white;
+        font-size: 64px;
+        line-height: 48px;
+
+        .currency {
+          position: relative;
+          bottom: 20px;
+
+          color: $white;
+          font-size: 32px;
+          line-height: 1em;
+          text-transform: uppercase;
+        }
+      }
+
+      .card-description {
+        margin-bottom: 65px;
+      }
+
+      .card-btn {
+        margin-bottom: 65px;
+      }
+    }
+  }
+}

@@ -1,8 +1,9 @@
 @use "sass:map";
 
 .footer {
-  background: linear-gradient(265.08deg, #95390c 14.9%, #5328a1 68.95%);
   font-size: 16px;
+
+  background: linear-gradient(265.08deg, #95390c 14.9%, #5328a1 68.95%);
 
   .links {
     display: flex;

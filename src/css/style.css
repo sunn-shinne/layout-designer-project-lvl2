@@ -202,8 +202,8 @@ body h2 {
 }
 
 .footer {
-  background: linear-gradient(265.08deg, #95390c 14.9%, #5328a1 68.95%);
   font-size: 16px;
+  background: linear-gradient(265.08deg, #95390c 14.9%, #5328a1 68.95%);
 }
 .footer .links {
   display: flex;
@@ -290,6 +290,85 @@ body h2 {
 }
 .description .form .btn {
   flex: 1 0 100%;
+}
+
+.pricing {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+  text-align: center;
+}
+@media (max-width: 1239px) {
+  .pricing {
+    max-width: 100%;
+    margin: 0;
+    padding: 100px 20px 0;
+  }
+}
+.pricing .pricing-title {
+  margin-bottom: 50px;
+  color: #fff;
+}
+.pricing .pricing-cards {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  justify-content: center;
+}
+@media (max-width: 811px) {
+  .pricing .pricing-cards {
+    flex-direction: column;
+  }
+}
+.pricing .pricing-cards .card {
+  display: flex;
+  flex-direction: column;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  font-size: 13px;
+  border-radius: 1rem;
+}
+.pricing .pricing-cards .card.card-bg-1 {
+  background-image: url("../images/subscribe_1.png");
+  background-position: center;
+  background-size: cover;
+}
+.pricing .pricing-cards .card.card-bg-2 {
+  background-image: url("../images/subscribe_2.png");
+  background-position: center;
+  background-size: cover;
+}
+.pricing .pricing-cards .card.card-bg-3 {
+  background-image: url("../images/subscribe_3.png");
+  background-position: center;
+  background-size: cover;
+}
+.pricing .pricing-cards .card .card-title {
+  margin: 24px 0 200px;
+  color: #fff;
+  font-weight: normal;
+  font-size: 24px;
+  text-transform: uppercase;
+}
+.pricing .pricing-cards .card .card-price {
+  margin-bottom: 40px;
+  color: #fff;
+  font-size: 64px;
+  line-height: 48px;
+}
+.pricing .pricing-cards .card .card-price .currency {
+  position: relative;
+  bottom: 20px;
+  color: #fff;
+  font-size: 32px;
+  line-height: 1em;
+  text-transform: uppercase;
+}
+.pricing .pricing-cards .card .card-description {
+  margin-bottom: 65px;
+}
+.pricing .pricing-cards .card .card-btn {
+  margin-bottom: 65px;
 }
 
 /*# sourceMappingURL=style.css.map */

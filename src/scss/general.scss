@@ -58,9 +58,41 @@ body {
   background-size: cover;
 }
 
+@mixin px($num) {
+  padding-right: $num;
+  padding-left: $num;
+}
+
+@mixin py($num) {
+  padding-top: $num;
+  padding-bottom: $num;
+}
+
+@mixin mx($num) {
+  margin-right: $num;
+  margin-left: $num;
+}
+
+@mixin my($num) {
+  margin-top: $num;
+  margin-bottom: $num;
+}
+
 @mixin media($breakpoint: small) {
   @media (max-width: map.get($breakpoints, $breakpoint)) {
     @content;
+  }
+}
+
+@mixin adaptive-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding-top: 100px;
+
+  @include media(medium) {
+    max-width: 100%;
+    margin: 0;
+    padding: 100px 20px 0;
   }
 }
 
