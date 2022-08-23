@@ -1,12 +1,5 @@
 .pricing {
-  @include adaptive-container;
   text-align: center;
-
-  .pricing-title {
-    margin-bottom: 50px;
-
-    color: $white;
-  }
 
   .pricing-cards {
     display: flex;

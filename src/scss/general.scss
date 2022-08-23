@@ -32,6 +32,7 @@ body {
   background-color: #08020d;
 
   h1 {
+    color: $white;
     font: bold 60px/90px Roboto, sans-serif;
     text-transform: uppercase;
 
@@ -42,6 +43,7 @@ body {
   }
 
   h2 {
+    color: $white;
     font: bold 38px/57px Roboto, sans-serif;
     text-transform: uppercase;
 
@@ -84,7 +86,7 @@ body {
   }
 }
 
-@mixin adaptive-container {
+.container {
   max-width: 1200px;
   margin: 0 auto;
   padding-top: 100px;
@@ -93,6 +95,10 @@ body {
     max-width: 100%;
     margin: 0;
     padding: 100px 20px 0;
+  }
+
+  .container-title {
+    margin-bottom: 50px;
   }
 }
 
@@ -123,6 +129,10 @@ body {
 
   &.btn-rounded {
     border-radius: 32px;
+  }
+
+  &.btn-small {
+    padding: 16px 30px;
   }
 }
 
