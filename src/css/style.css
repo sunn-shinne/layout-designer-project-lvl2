@@ -533,8 +533,7 @@ body h2 {
 
 .popular-tracks .tracks {
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
+  flex-flow: row wrap;
   gap: 25px 50px;
 }
 @media (max-width: 811px) {
@@ -544,8 +543,8 @@ body h2 {
 }
 .popular-tracks .tracks .track {
   display: flex;
-  align-items: center;
   flex: 1 1 45%;
+  align-items: center;
 }
 .popular-tracks .tracks .track img {
   width: 55px;
@@ -553,19 +552,51 @@ body h2 {
   margin-right: 15px;
 }
 .popular-tracks .tracks .track .track-info {
-  width: 100%;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  width: 100%;
   font-size: 12.8px;
   line-height: 1.5;
 }
 .popular-tracks .tracks .track .track-info h3 {
   color: #fff;
+  font-weight: bold;
   font-size: 12.8px;
   line-height: 1.5;
-  font-weight: bold;
   text-transform: uppercase;
+}
+
+.discography-list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 25px 50px;
+}
+.discography-list .discography-item {
+  display: flex;
+  flex-direction: column;
+  flex: 0 0 250px;
+  font-size: 16px;
+}
+@media (max-width: 811px) {
+  .discography-list .discography-item {
+    flex-basis: 137px;
+  }
+}
+.discography-list .discography-item img {
+  width: 250px;
+  height: 250px;
+}
+@media (max-width: 811px) {
+  .discography-list .discography-item img {
+    width: 137px;
+    height: 137px;
+  }
+}
+.discography-list .discography-item h3 {
+  margin-top: 18px;
+  color: #fff;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=style.css.map */
