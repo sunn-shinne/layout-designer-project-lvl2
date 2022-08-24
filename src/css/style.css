@@ -59,7 +59,39 @@ body h2 {
   }
 }
 .container .container-title {
-  margin-bottom: 50px;
+  margin-bottom: 48px;
+}
+
+.flex-list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 25px 50px;
+}
+.flex-list .flex-item {
+  display: flex;
+  flex: 0 0 250px;
+  flex-direction: column;
+  font-size: 16px;
+}
+@media (max-width: 811px) {
+  .flex-list .flex-item {
+    flex-basis: 137px;
+  }
+}
+.flex-list .flex-item img {
+  width: 250px;
+  height: 250px;
+}
+@media (max-width: 811px) {
+  .flex-list .flex-item img {
+    width: 137px;
+    height: 137px;
+  }
+}
+.flex-list .flex-item h3 {
+  margin-top: 18px;
+  color: #fff;
+  font-weight: bold;
 }
 
 .btn {
@@ -567,36 +599,14 @@ body h2 {
   text-transform: uppercase;
 }
 
-.discography-list {
-  display: flex;
-  flex-flow: row wrap;
-  gap: 25px 50px;
+.similar {
+  margin-bottom: 100px;
 }
-.discography-list .discography-item {
-  display: flex;
-  flex-direction: column;
-  flex: 0 0 250px;
-  font-size: 16px;
+.similar .flex-item {
+  text-align: center;
 }
-@media (max-width: 811px) {
-  .discography-list .discography-item {
-    flex-basis: 137px;
-  }
-}
-.discography-list .discography-item img {
-  width: 250px;
-  height: 250px;
-}
-@media (max-width: 811px) {
-  .discography-list .discography-item img {
-    width: 137px;
-    height: 137px;
-  }
-}
-.discography-list .discography-item h3 {
-  margin-top: 18px;
-  color: #fff;
-  font-weight: bold;
+.similar .flex-item img {
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=style.css.map */
