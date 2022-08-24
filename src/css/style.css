@@ -224,19 +224,23 @@ body h2 {
 
 .footer {
   font-size: 16px;
-  background: linear-gradient(265.08deg, #95390c 14.9%, #5328a1 68.95%);
+}
+.footer.bg-gradient {
+  background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+}
+.footer hr {
+  border: 1px solid #cacaca;
 }
 .footer .links {
   display: flex;
   justify-content: space-between;
-  padding: 60px 120px 70px;
-  border-bottom: 2px solid #cacaca;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
 }
 @media (max-width: 811px) {
   .footer .links {
     flex-direction: column;
     gap: 30px;
-    padding: 60px 20px 75px;
   }
 }
 .footer .links .col {
@@ -262,12 +266,12 @@ body h2 {
   display: flex;
   flex-direction: row;
   gap: 16px;
-  padding: 40px 120px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 @media (max-width: 811px) {
   .footer .main-links {
     flex-direction: column;
-    padding: 40px 20px 50px;
   }
 }
 
@@ -474,8 +478,8 @@ body h2 {
 }
 .app .app-content .img {
   display: flex;
-  justify-content: center;
   flex: 1 1 45%;
+  justify-content: center;
 }
 .app .app-content .text {
   flex: 1 1 55%;

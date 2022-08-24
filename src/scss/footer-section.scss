@@ -3,21 +3,23 @@
 .footer {
   font-size: 16px;
 
-  background: linear-gradient(265.08deg, #95390c 14.9%, #5328a1 68.95%);
+  &.bg-gradient {
+    background: linear-gradient(89.75deg, #5328a1 32.83%, #95390c 81.56%);
+  }
+
+  hr {
+    border: 1px solid $dark-grey;
+  }
 
   .links {
     display: flex;
     justify-content: space-between;
 
-    padding: 60px 120px 70px;
-
-    border-bottom: 2px solid $dark-grey;
+    @include py(3rem);
 
     @include media(small) {
       flex-direction: column;
       gap: 30px;
-
-      padding: 60px 20px 75px;
     }
 
     .col {
@@ -52,12 +54,10 @@
     flex-direction: row;
     gap: 16px;
 
-    padding: 40px 120px;
+    @include py(2rem);
 
     @include media(small) {
       flex-direction: column;
-
-      padding: 40px 20px 50px;
     }
   }
 }
