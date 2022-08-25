@@ -5,37 +5,38 @@
 
   .app-content {
     display: flex;
-    flex-direction: row;
     row-gap: 15px;
-    justify-content: space-between;
 
     margin-bottom: 100px;
 
-    @include media(medium) {
+    @include media(small) {
       flex-direction: column-reverse;
-      align-items: center;
     }
 
-    p {
-      margin-bottom: 15px;
+    .text {
+      flex-basis: 50%;
+      margin-top: 16px;
+
+      @include media(medium) {
+        margin-top: 0;
+      }
+
+      p {
+        margin-bottom: 16px;
+
+        font-size: 16px;
+      }
+
+      .btn {
+        display: inline-block;
+        padding: 16px 40px;
+      }
     }
 
     .img {
       display: flex;
-      flex: 1 1 45%;
+      flex-basis: 50%;
       justify-content: center;
-    }
-
-    .text {
-      flex: 1 1 55%;
-
-      margin-top: 15px;
-
-      .btn {
-        display: inline-block;
-        margin-top: 15px;
-        padding: 16px 40px;
-      }
     }
   }
 }
