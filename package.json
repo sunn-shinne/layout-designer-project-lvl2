@@ -1,11 +1,11 @@
 {
   "name": "music-box",
   "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/sunn-shinne/layout-designer-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/sunn-shinne/layout-designer-project-lvl2/actions)",
+  "description": "[![Actions Status](https://github.com/sunn-shinne/music-box/workflows/hexlet-check/badge.svg)](https://github.com/sunn-shinne/music-box/actions)",
   "main": "music portal music-box",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sunn-shinne/layout-designer-project-lvl2.git"
+    "url": "git+https://github.com/sunn-shinne/music-box.git"
   },
   "devDependencies": {
     "htmlhint": "^1.1.0",
@@ -20,7 +20,7 @@
   "author": "Ekaterina Brekhova",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/sunn-shinne/layout-designer-project-lvl2/issues"
+    "url": "https://github.com/sunn-shinne/music-box/issues"
   },
-  "homepage": "https://github.com/sunn-shinne/layout-designer-project-lvl2#readme"
+  "homepage": "https://github.com/sunn-shinne/music-box#readme"
 }

@@ -1,9 +1,12 @@
-# Cognitive distortions
+# Music Box
 
-[![Actions Status](https://github.com/sunn-shinne/layout-designer-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/sunn-shinne/layout-designer-project-lvl2/actions)
-[![Actions Status](https://github.com/sunn-shinne/layout-designer-project-lvl1/workflows/linter-check/badge.svg)](https://github.com/sunn-shinne/layout-designer-project-lvl2/actions)
+[![Actions Status](https://github.com/sunn-shinne/music-box/workflows/hexlet-check/badge.svg)](https://github.com/sunn-shinne/music-box/actions)
+[![Actions Status](https://github.com/sunn-shinne/music-box/workflows/linter-check/badge.svg)](https://github.com/sunn-shinne/music-box/actions)
 
-[DEPLOYED HERE](http://music-box-sunnshinne.surge.sh/)
+Demonstration:
+
+- [Main page](http://music-box-sunnshinne.surge.sh/index) 
+- [Artist page](http://music-box-sunnshinne.surge.sh/artist)
 
 ---
 
